@@ -1,1 +1,65 @@
 
+12월22일
+JSP수업
+
+3장
+ jsp지시자 
+jsp지시자의 종류
+-page
+	-다른것다 필요없고 errorpage작업,  import작업 두개만 제대로 알고있으면된다.
+-include
+-taglib(태그라이브러리)  ##EL, JSTL## 나중에배울것..외부평가때는 못쓴다.
+
+Forward : request내장객체의 내용을 유지한채로 다른 페이지로  요청
+
+Redirect : request내장객체의 내용을 삭제하고 다른 페이지로 요청
+
+오후수업 
+4장 액션태그
+서버나 클라이언트에게 어떤행동을 하도록 명력하는것
+-외부평가에 나오는 액션태그 useBean,setProperty,get를  많이 쓸것이다.
+
+Forward액션태그
+-현재 JSP페이지에서 다른페이지로 이동
+자체척으로 파라미터를 받아올수있다.
+
+include액션태그
+
+
+수업정리
+
+01Basic
+선언문 : <%!	 %>
+스크립틀릿 : <%	%>
+표현식 : <%=	%> 
+
+02 
+request.getParameter("변수명");
+request.getParamValues("변수명");
+...
+
+
+03 지시자
+-page
+   -error페이지만들기
+   -import 경로지정 (중요)
+-include
+-tablib (X)
+
+04 Forward / Redirect
+-Forward : request유지(O)	:처음 요청 URL 유지 / WEB-INF 경로 내의 위치로 전달(O)
+-redurect : reqyest유지(X)	:마지막 요청URL
+
+05 액션태그
+- forward액션 태그 (Forward + Param전달 + 버퍼 초기화)
+
+-include액션 태그 (include + Param전달)
+
+-useBean액션 태그
+...
+
+
+
+
+
+
