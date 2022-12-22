@@ -20,6 +20,7 @@
 	<%
 		System.out.println("REALPATH : " + pageContext.getServletContext().getRealPath("/"));
 		String filepath = pageContext.getServletContext().getRealPath("/");
+		/* 경로를 찾는방법 다적기에는 너무 길다보니 filepath로 경로를 찾아주고 상세경로는 적어준다.  */
 		File dir = new File(filepath + "05/02IncludeAction/actionTest");
 		/*C:\Users\Administrator\Desktop\정보처리산업기사\11서버프로그램구현\eclipseJSP\workspace\JSP\src\main\webapp\05\02IncludeAction\actionTest  */
 		String lists[] = dir.list();
